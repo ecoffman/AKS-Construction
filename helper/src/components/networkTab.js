@@ -357,7 +357,7 @@ function PodServiceNetwork({ net, updateFn }) {
             </Stack.Item>
             <Stack.Item styles={{root: {width: '380px'}}} align="start">
                 <TextField prefix="IP" label="DNS Service IP" onChange={(ev, val) => updateFn("dnsServiceIP", val)} value={net.dnsServiceIP} />
-                <MessageBar messageBarType={MessageBarType.warning}>Ensure its an address within the Service CIDR above <a target="_target" href="https://docs.microsoft.com/en-us/azure/aks/configure-kubenet#create-an-aks-cluster-in-the-virtual-network">docs</a></MessageBar>
+                <MessageBar messageBarType={MessageBarType.warning}>Ensure it's an address within the Service CIDR above <a target="_target" href="https://docs.microsoft.com/en-us/azure/aks/configure-kubenet#create-an-aks-cluster-in-the-virtual-network">docs</a></MessageBar>
             </Stack.Item>
 
         </Stack>
